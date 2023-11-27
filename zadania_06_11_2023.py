@@ -9,33 +9,42 @@ Original file is located at
 Zadanie 1
 """
 
+
 def przywitaj(name, surname):
     wynik = f'Cześć {name} {surname}!'
     return wynik
+
 
 name = "Kasia"
 surname = "Wolna"
 wynik_funkcji = przywitaj(name, surname)
 print(wynik_funkcji)
 
-"""Zadanie 2"""
+
+""" Zadanie 2 """
+
 
 def pomnóż(a, b):
     wynik = a * b
     return wynik
 
+
 liczba1 = 2
 liczba2 = 7
 wynik_mnożenia = pomnóż(liczba1, liczba2)
+
 print(wynik_mnożenia)
 
-"""Zadanie 3"""
+
+""" Zadanie 3 """
+
 
 def czy_parzysta(liczba):
     if liczba % 2 == 0:
         return True
     else:
         return False
+
 
 liczba = 2
 wynik_funkcji = czy_parzysta(liczba)
@@ -45,7 +54,9 @@ if wynik_funkcji:
 else:
     print("Liczba nieparzysta")
 
-"""Zadanie 4"""
+
+""" Zadanie 4 """
+
 
 def sprawdź_sumę(a, b, c):
     suma = a + b
@@ -54,6 +65,7 @@ def sprawdź_sumę(a, b, c):
     else:
         return False
 
+
 liczba1 = 2
 liczba2 = 6
 liczba3 = 9
@@ -61,7 +73,9 @@ wynik_funkcji = sprawdź_sumę(liczba1, liczba2, liczba3)
 
 print(wynik_funkcji)
 
-"""Zadanie 5"""
+
+""" Zadanie 5 """
+
 
 def sprawdź_obecność_wartości(lista, wartość):
     if wartość in lista:
@@ -69,19 +83,23 @@ def sprawdź_obecność_wartości(lista, wartość):
     else:
         return False
 
+
 moja_lista = [1, 2, 3, 4, 5]
 szukana_wartość = 3
 wynik_funkcji = sprawdź_obecność_wartości(moja_lista, szukana_wartość)
 
 print(wynik_funkcji)
 
-"""Zadanie 6"""
+
+""" Zadanie 6 """
+
 
 def przetwórz_listy(lista1, lista2):
     połączona_lista = lista1 + lista2
     unikalna_lista = list(set(połączona_lista))
     lista_potęgowana = [x ** 3 for x in unikalna_lista]
     return lista_potęgowana
+
 
 lista1 = [1, 2, 3, 4]
 lista2 = [2, 4, 6, 8]
