@@ -15,8 +15,6 @@ def przywitaj(name, surname):
     return wynik
 
 
-
-
 name = "Kasia"
 surname = "Wolna"
 wynik_funkcji = przywitaj(name, surname)
@@ -29,7 +27,6 @@ print(wynik_funkcji)
 
 def pomnoz(a, b):
     wynik = a * b
-
 
     return wynik
 
@@ -49,8 +46,8 @@ def czy_parzysta(liczba):
     else:
         return False
 
-liczba = 2
 
+liczba = 2
 wynik_funkcji = czy_parzysta(liczba)
 
 if wynik_funkcji:
@@ -61,9 +58,9 @@ else:
 
 """ Zadanie 4 """
 
+
 def sprawdz_sume(a, b, c):
     suma = a + b
-
     if suma < c:
         return False
     else:
@@ -79,28 +76,37 @@ print(wynik_funkcji)
 
 """ Zadanie 5 """
 
+
 def sprawdz_obecnosc_wartosci(lista, wartosc):
-    if wartosc in lista:
-        return False
-    else:
+    if wartosc not in lista:
         return True
+    else:
+        return False
+
 
 moja_lista = [1, 2, 3, 4, 5]
 szukana_wartosc = 3
+
 wynik_funkcji = sprawdz_obecnosc_wartosci(moja_lista, szukana_wartosc)
 
 print(wynik_funkcji)
 
+
 """ Zadanie 6 """
 
+
 def przetworz_listy(lista1, lista2):
+
     polaczona_lista = lista1 + lista2
     unikalna_lista = list(set(polaczona_lista))
     lista_potegowana = [x ** 3 for x in unikalna_lista]
     return lista_potegowana
 
+
 lista1 = [1, 2, 3, 4]
 lista2 = [2, 4, 6, 8]
+
 wynik_funkcji = przetworz_listy(lista1, lista2)
+
 
 print(wynik_funkcji)
